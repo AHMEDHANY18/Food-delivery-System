@@ -1,9 +1,16 @@
-# Food delivery System – README
+# 🍔 Food Delivery System – README
 
 ## 📌 Project Overview
-The Food delivery System is a complete platform that connects customers with restaurants.
+The **Food Delivery System** is a complete platform that connects customers with restaurants.
 It allows users to browse restaurants and menus, add items to a cart, place orders,
 make online payments, and track order status in real time.
+
+This project is designed following **Software Engineering principles**, including:
+- Use Cases
+- Flowcharts
+- Sequence Diagrams
+- Entity Relationship Diagrams (ERD)
+- Pseudocode
 
 ---
 
@@ -32,7 +39,7 @@ make online payments, and track order status in real time.
 - Complete user account management
 - Email or OTP verification
 - Social media authentication
-- Role-based access control (RBAC)
+- Role-Based Access Control (RBAC)
 
 **Functions**
 - Sign up
@@ -158,9 +165,55 @@ make online payments, and track order status in real time.
 
 ---
 
+## 📊 User Registration & Login – Diagrams
+
+### 🔹 Flowchart
+![User Registration & Login Flowchart](./diagrams/flowchart.png)
+
+### 🔹 Sequence Diagram
+![User Registration & Login Sequence Diagram](./diagrams/Sequence%20Diagram.png)
+
+### 🔹 Entity Relationship Diagram (ERD)
+![User Registration & Login ERD](./diagrams/ERD.png)
+
+---
+
+## 🧠 Pseudocode – User Registration & Login
+
+```
+BEGIN UserRegistration
+INPUT userData
+IF data invalid THEN RETURN error
+IF email exists THEN RETURN error
+HASH password
+CREATE user (INACTIVE)
+ASSIGN default role
+SEND verification code
+IF verified THEN ACTIVATE user
+RETURN success
+END
+
+BEGIN UserLogin
+INPUT email, password
+IF user not found THEN RETURN error
+IF password invalid THEN RETURN error
+IF account not active THEN RETURN verification required
+GENERATE auth token
+RETURN success
+END
+```
+
+---
+
 ## 🛠 Technical Notes
 - RESTful API architecture
 - Scalable database design
 - Soft delete and hard delete support
 - Role-based authorization
 - Designed to support thousands of restaurants
+
+---
+
+## ✅ Conclusion
+This project demonstrates a well-structured approach to system analysis and design,
+covering all required diagrams and documentation for the **Food Delivery System**.
