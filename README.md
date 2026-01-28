@@ -205,14 +205,6 @@ END
 
 ---
 
-## 🛠 Technical Notes
-- RESTful API architecture
-- Scalable database design
-- Soft delete and hard delete support
-- Role-based authorization
-- Designed to support thousands of restaurants
-
----
 
 ## ✅ Conclusion
 This project demonstrates a well-structured approach to system analysis and design,
