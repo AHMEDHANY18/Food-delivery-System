@@ -386,5 +386,4 @@ the cart is the rightful owner of that cart.
 * output Success Response (200)
 * error 400
 
-```
 
